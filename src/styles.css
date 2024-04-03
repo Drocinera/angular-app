@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "bubbleboddy-neue";
+    src: url("assets/Font/bubbleboddy-neue/bubbleboddyneue-regular trial.ttf");
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("assets/Font/Comfortaa/static/Comfortaa-Regular.ttf");
+}
