@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
+title = 'Bienvenu sur la boutique "au petit village"' ;
 }
