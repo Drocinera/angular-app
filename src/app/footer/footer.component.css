@@ -1,0 +1,40 @@
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #151217;
+    color: white;
+}
+
+div {
+    display: flex;
+}
+
+.contactFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 10em;
+    padding-left: 0;
+}
+
+.mediaFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10em;
+}
+
+img {
+    width: 1.5em;
+    padding-right: 0.25em;
+    padding-left: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+a , address {
+    display: flex;
+    color: white;
+    padding-right: 0.25em;
+}
