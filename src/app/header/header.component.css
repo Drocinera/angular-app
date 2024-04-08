@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    max-width: auto;
+    max-height: 200px;
+    background-image: url("/assets/Images/fond header astérix.jpg");
+    background-size: cover;
+    justify-content: space-between;
+}
+
+img {
+    display: flex;
+    height: 150px;
+    width: auto;
+    padding: 0.5em;
+}
+
+nav {
+    display: flex;
+    align-items:flex-end;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    background-color:#F9D0A3 ;
+    padding-left: 0.5em;
+    margin: 0.5em;
+}
+
+a {
+    display: flex;
+    padding-right: 0.5em;
+    color:#151217;
+    filter: contrast(200%);
+}
