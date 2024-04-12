@@ -16,4 +16,14 @@ body {
     background-color:#F9D0A3;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "bubbkeboddy-neue";
+    color: #151217;
+}
+
+* {
+    font-family: "Comfortaa";
+    color: #151217;
+}
+
 /*Ne pas oublier dde faire un breakpoint a 600px car site pas adapté au mobile*/
