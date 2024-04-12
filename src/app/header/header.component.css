@@ -1,9 +1,11 @@
 header {
     display: flex;
     max-width: auto;
-    max-height: 200px;
+    max-height: auto;
     background-image: url("/assets/Images/fond header astérix.jpg");
     background-size: cover;
+    border: 2px solid;
+    height: 200px;
     justify-content: space-between;
 }
 
