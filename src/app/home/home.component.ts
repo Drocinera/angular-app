@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -22,5 +23,11 @@ sortOrder: 'asc' | 'desc' = 'asc';
 
 sort(order: 'asc' | 'desc') {
   this.sortOrder = order;
+}
+
+constructor(private router: Router) { }
+
+navigateToProduct(productId: number) {
+  this.router.navigate(['/product', productId]);
 }
 }

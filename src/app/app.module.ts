@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { ProductComponent } from './product/product.component';
 import { SortByPricePipe } from './sort-by-price.pipe';
 import { FilterByNamePipe } from './filter-by-name.pipe';
+import { ProductService } from './product.service'; 
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { FilterByNamePipe } from './filter-by-name.pipe';
     AppRoutingModule,
     FormsModule 
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
