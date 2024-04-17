@@ -4,16 +4,25 @@
   </div>
   <div>
     <p class="home-presentation">Nous sommes une entreprise qui confectionne des figurines inspirées de la bande
-      dessinée Astérix et Obélix. Notre but : Comblé la nostalgie des fantastiques aventures d'Astérix et Obélix.</p>
-  </div>
-  <div>
-    <p>Recherche par nom</p>
-  </div>
-  <div>
-    <p>trie par prix croisssant ou décroissant</p>
+      dessinée Astérix et Obélix. Notre but : Combler la nostalgie des fantastiques aventures d'Astérix et Obélix.</p>
   </div>
   <div class="home-catalogue">
-    <p>catalogue des produits vendu</p>
+    <h2 class="title-catalogue">Catalogue de nos produits :</h2>
+      <div class="home-sort">
+        <input type="text" [(ngModel)]="searchTerm" placeholder="Recherche par nom">
+        <p class="HomeButtonSort">
+          <button class="croissant" (click)="sort('asc')">Croissant</button>
+          <button class="decroissant" (click)="sort('desc')">Décroissant</button>
+      </p>
+    </div>
+  </div>
+    <div>
+      <ul class="home-product">
+        <p class="imgProduct" *ngFor="let figurine of figurines | sortByPrice: sortOrder | filterByName: searchTerm; let i = index " (click)="navigateToProduct(figurine.id)">
+          <img [src]="figurine.image" alt="{{ figurine.name }}">
+          {{ figurine.name }} - {{ figurine.price }}€
+      </p>
+    </ul>
   </div>
 </main>
 
