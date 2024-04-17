@@ -11,14 +11,14 @@
       <div class="home-sort">
         <input type="text" [(ngModel)]="searchTerm" placeholder="Recherche par nom">
         <p class="HomeButtonSort">
-          <button (click)="sort('asc')">Croissant</button>
-          <button (click)="sort('desc')">Décroissant</button>
+          <button class="croissant" (click)="sort('asc')">Croissant</button>
+          <button class="decroissant" (click)="sort('desc')">Décroissant</button>
       </p>
     </div>
   </div>
     <div>
       <ul class="home-product">
-        <p class="imgProduct" *ngFor="let figurine of figurines | sortByPrice: sortOrder | filterByName: searchTerm" (click)="navigateToProduct(figurine)">
+        <p class="imgProduct" *ngFor="let figurine of figurines | sortByPrice: sortOrder | filterByName: searchTerm; let i = index " (click)="navigateToProduct(figurine.id)">
           <img [src]="figurine.image" alt="{{ figurine.name }}">
           {{ figurine.name }} - {{ figurine.price }}€
       </p>
