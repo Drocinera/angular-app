@@ -23,7 +23,7 @@ div {
     padding-bottom: 0.5em;
 }
 
-img {
+.aboutImg {
     height: 20em;
     width: auto;
     padding: 0.5em;
@@ -32,4 +32,19 @@ img {
 
 p {
 text-align: center;
+}
+
+.contactAbout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 10em;
+    padding-left: 5em;
+}
+
+img {
+    width: 1.5em;
+    padding-right: 0.25em;
+    padding-left: 0.25em;
+    padding-bottom: 0.25em;
 }
