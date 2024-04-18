@@ -9,7 +9,7 @@
   <div class="home-catalogue">
     <h2 class="title-catalogue">Catalogue de nos produits :</h2>
       <div class="home-sort">
-        <input type="text" [(ngModel)]="searchTerm" placeholder="Recherche par nom">
+        <input type="text" [(ngModel)]="searchTerm" placeholder="Recherche">
         <p class="HomeButtonSort">
           <button class="croissant" (click)="sort('asc')">Croissant</button>
           <button class="decroissant" (click)="sort('desc')">Décroissant</button>
@@ -19,7 +19,7 @@
     <div>
       <ul class="home-product">
         <p class="imgProduct" *ngFor="let figurine of figurines | sortByPrice: sortOrder | filterByName: searchTerm; let i = index " (click)="navigateToProduct(figurine.id)">
-          <img [src]="figurine.image" alt="{{ figurine.name }}">
+          <img [src]="figurine.image" alt="{{ figurine.name }}" title="Cliquer pour plus de détail">
           {{ figurine.name }} - {{ figurine.price }}€
       </p>
     </ul>

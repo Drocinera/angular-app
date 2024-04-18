@@ -34,4 +34,22 @@ a {
     padding-right: 0.5em;
     color:#151217;
     filter: contrast(200%);
+    text-decoration: none;
+}
+
+ul :hover {
+    background-color:#DA001E;
+    color: #151217;
+    cursor: pointer;
+    filter: brightness(100%);
+    filter: contrast(100%);
+}
+
+@media screen and (max-width: 768px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+    justify-content:flex-end;
+
+    }
 }
